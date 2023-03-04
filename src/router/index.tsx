@@ -1,18 +1,17 @@
 import {
-    createBrowserRouter,
-    RouterProvider,
-    Route,
-    Link,
+    createHashRouter,
+    Navigate
 } from "react-router-dom";
 import Chat from "../pages/Chat";
 
-export  const router = createBrowserRouter([
+export  const router = createHashRouter([
     {
         path: "/",
-        element: <Chat/>
+        element: (<Navigate to="/chat"/>)
     },
     {
-        path: "about",
-        element: <div>About</div>,
+        path:"chat",
+        element:<Chat/>,
     },
+
 ]);

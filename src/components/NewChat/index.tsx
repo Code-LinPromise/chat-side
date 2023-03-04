@@ -1,13 +1,11 @@
 import React from 'react';
 import  s from "./style.module.scss"
-import NavBar from "../../layouts/NavBar";
-
-const Chat = () => {
+const NewChat = () => {
     return (
         <div>
-            <NavBar/>
+            <span></span>
         </div>
     );
 };
 
-export default Chat;
+export default NewChat;
