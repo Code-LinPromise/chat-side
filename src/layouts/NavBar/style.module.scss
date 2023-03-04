@@ -1,3 +1,8 @@
 .wrapper{
-
+  min-height: 100vh;
+  width: 250px;
+  background: linear-gradient(90deg,var(--nav-bg-start-color),var(--nav-bg-end-color));
+  position: fixed;
+  top: 0;
+  left: 0;
 }

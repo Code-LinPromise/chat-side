@@ -6,6 +6,7 @@ const Chat = () => {
     return (
         <div>
             <NavBar/>
+
         </div>
     );
 };
