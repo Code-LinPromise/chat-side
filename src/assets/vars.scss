@@ -1,11 +1,28 @@
 :root .light{
+  --body-bg-color:white;
+  --title-color:#343541;
+  --details-text-color:#343541;
+  --input-border-color:#e5e5e5;
+  --input-text-color:black;
+  --input--icon-send-color:#ececf1;
+}
+:root .all {
   --nav-bg-start-color:#202123;
   --nav-bg-end-color:#1f2022;
   --nav-border-color:#555659;
   --nav-text-color:white;
   --nav-hover-color:#2b2c2f;
   --chat-item-text-color:white;
+  --input-bg-color: #ffffff;
 }
 
 
-:root .dark{}
+:root .dark{
+  --input--icon-send-color:#202123;
+  --body-bg-color:#343541;
+  --title-color:#ececf1;
+  --details-text-color:#ececf1;
+  --input-bg-color:#40414f;
+  --input-border-color:#303139;
+  --input-text-color: white;
+}

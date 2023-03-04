@@ -1,0 +1,28 @@
+.wrapper{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 100px;
+  background-color: var(--input-bg-color);
+  padding: 15px 30px;
+  border-radius: 16px;
+  border: 1px solid var(--input-border-color);
+  >input{
+    height: 24px;
+    width: 650px;
+    border: none;
+    background-color: var(--input-bg-color);
+    color: var(--input-text-color);
+    &:focus{
+      outline: none;
+    }
+  }
+  >span{
+    &:hover{
+      background-color: var(--input--icon-send-color);
+    }
+    padding: 5px 8px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+}
