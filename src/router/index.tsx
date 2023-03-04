@@ -4,17 +4,12 @@ import {
     Route,
     Link,
 } from "react-router-dom";
-
+import Chat from "../pages/Chat";
 
 export  const router = createBrowserRouter([
     {
         path: "/",
-        element: (
-            <div>
-                <h1>Hello World</h1>
-                <Link to="about">About Us</Link>
-            </div>
-        ),
+        element: <Chat/>
     },
     {
         path: "about",
