@@ -1,0 +1,27 @@
+.wrapper{
+  width: 100%;
+  margin-top: 10px;
+  >.iconAndFont{
+    &:hover{
+      background: #2a2b32;
+    }
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 8px;
+    padding: 8px 4px;
+    margin: 4px 16px;
+    display: flex;
+    align-items: center;
+    >.font{
+      margin-left: 16px;
+      color: var(--chat-item-text-color);
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      word-break: break-all;
+      overflow: hidden;
+    }
+  }
+
+}
