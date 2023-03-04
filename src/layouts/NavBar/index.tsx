@@ -3,6 +3,7 @@ import  s from "./style.module.scss"
 import Icon from "../../components/Icon";
 import NewChat from "../../components/NewChat";
 import ChatItemList from "../../components/ChatItemList";
+import ToolList from "../../components/ToolList";
 const NavBar = () => {
     return (
         <div className={s.wrapper}>
@@ -13,7 +14,7 @@ const NavBar = () => {
 
                 </span>
             </div>
-
+            <ToolList/>
         </div>
     );
 };

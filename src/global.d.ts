@@ -1,0 +1,1 @@
+type IconType="add" | "chat" |"dark" | "delete"

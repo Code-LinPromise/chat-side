@@ -8,7 +8,7 @@ const ChatItemList = () => {
             <ul>
                 {
                     array.map((item,index)=>{
-                        return <li><ChatItem title="2sadadadadadadadadadadsdasdasdasd"/></li>
+                        return <li><ChatItem title="2sadadadadadadadadadadsdasdasdasd" name="chat"/></li>
                     })
                 }
             </ul>

@@ -3,13 +3,14 @@ import s from "./style.module.scss"
 import Icon from "../../Icon";
 
 type Props ={
-    title:string
+    title:string,
+    name:IconType,
 }
 const ChatItem = (props:Props) => {
     return (
         <div className={s.wrapper}>
             <div className={s.iconAndFont}>
-                <span><Icon name="chat"/></span>
+                <span><Icon name={props.name}/></span>
                 <span className={s.font}>{props.title}</span>
             </div>
         </div>
