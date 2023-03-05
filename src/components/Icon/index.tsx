@@ -1,14 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import s from "./style.module.scss"
 
 type Props={
     name:IconType,
-    ClickEvent?:(e:MouseEvent)=>void,
+    ClickEvent?: (e: React.MouseEvent<SVGSVGElement>)=>void,
+    isBlack?:boolean
 }
-const Icon = (props:Props) => {
+const Icon = ({name,ClickEvent,isBlack=false}:Props) => {
     return (
-        <svg className={s.svg} onClick={()=>props?.ClickEvent}>
-            <use xlinkHref={`#${props.name}`}></use>
+        <svg className={isBlack?s.svgBlack:s.svgWhite} onClick={(e)=>ClickEvent?.(e)}>
+            <use xlinkHref={`#${name}`}></use>
         </svg>
     );
 };

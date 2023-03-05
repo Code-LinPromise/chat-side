@@ -1,16 +1,28 @@
 import React from 'react';
 import Icon from "../Icon";
 import Details from "../Details";
+import s from "./style.module.scss"
 
-const ChatPadList = () => {
+type Props={
+    IconName:IconType,
+    title:string,
+    detailsList:string[]
+}
+const ChatPadList = (props:Props) => {
     return (
-        <div>
-            <div>
-                <Icon name="sun"/>
-                <span>Examples</span>
+        <div className={s.wrapper}>
+            <div className={s.title}>
+                <span><Icon name={props.IconName} isBlack={true}/></span>
+                <span className={s.font}>{props.title}</span>
             </div>
             <ul>
-                <Details details="sadasdasdas"/>
+                {
+                    props.detailsList.map((item,index)=>{
+                        return <li key={index}>
+                            <Details details={item} />
+                        </li>
+                    })
+                }
             </ul>
         </div>
     );

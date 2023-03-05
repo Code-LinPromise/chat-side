@@ -5,6 +5,8 @@
   --input-border-color:#e5e5e5;
   --input-text-color:black;
   --input--icon-send-color:#ececf1;
+  --details-bg-color:#f7f7f8;
+  --details-hover-bg:#d9d9e3;
 }
 :root .all {
   --nav-bg-start-color:#202123;
@@ -18,6 +20,8 @@
 
 
 :root .dark{
+  --details-bg-color:#3e3f4b;
+  --details-hover-bg:#202123;
   --input--icon-send-color:#202123;
   --body-bg-color:#343541;
   --title-color:#ececf1;

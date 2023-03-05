@@ -6,12 +6,21 @@
   min-height: 100vh;
   width: 100%;
   >.font{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     >h1{
       font-size: 48px;
       font-weight: 700;
       margin-top: 100px;
       display: inline-block;
       color: var(--title-color);
+    }
+    >.info{
+      display: flex;
+      margin-top: 30px;
+      justify-content: space-around;
+
     }
   }
 }
