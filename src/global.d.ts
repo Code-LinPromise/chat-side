@@ -1,1 +1,1 @@
-type IconType="add" | "chat" |"dark" | "delete" | "enter" | "sun" | "light" | "danger"
+type IconType="add" | "chat" |"dark" | "delete" | "enter" | "sun" | "light" | "danger" | "user"

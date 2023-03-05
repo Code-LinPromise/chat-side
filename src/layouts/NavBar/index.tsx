@@ -5,7 +5,6 @@ import NewChat from "../../components/NewChat";
 import ChatItemList from "../../components/ChatItemList";
 import ToolList from "../../components/ToolList";
 import {useShowBlack} from "../../store/useShowBlack";
-import {StoreApi} from "zustand/esm";
 
 const NavBar = () => {
     const showBlack=useShowBlack(state=>state.showBlack)

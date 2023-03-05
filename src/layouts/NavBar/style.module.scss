@@ -2,10 +2,8 @@
   min-height: 100vh;
   width: 300px;
   background: linear-gradient(90deg,var(--nav-bg-start-color),var(--nav-bg-end-color));
-
   z-index: 10;
   >.line{
-    margin-top: 15px;
     width: 100%;
     padding: 0 8px;
     >.spanLine{

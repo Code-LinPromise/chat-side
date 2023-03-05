@@ -7,6 +7,9 @@
   --input--icon-send-color:#ececf1;
   --details-bg-color:#f7f7f8;
   --details-hover-bg:#d9d9e3;
+  --user-bg-color:#ffffff;
+  --ai-bg-color:#f7f7f8;
+  --user-ai-text-color:#374151;
 }
 :root .all {
   --nav-bg-start-color:#202123;
@@ -20,6 +23,9 @@
 
 
 :root .dark{
+  --user-ai-text-color:#d1d5db;
+  --ai-bg-color:#444654;
+  --user-bg-color:#343541;
   --details-bg-color:#3e3f4b;
   --details-hover-bg:#202123;
   --input--icon-send-color:#202123;

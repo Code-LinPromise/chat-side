@@ -19,7 +19,7 @@ export  const router = createHashRouter([
                 element:<ChatPad/>
             },
             {
-                path:"info",
+                path:"info/:details",
                 element:<Reply/>
             }
         ]
