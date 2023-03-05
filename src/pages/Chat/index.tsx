@@ -3,13 +3,14 @@ import  s from "./style.module.scss"
 import NavBar from "../../layouts/NavBar";
 import {useEffect} from "react";
 import ChatPad from "../ChatPad";
+import {Outlet} from "react-router-dom";
 
 const Chat = () => {
 
     return (
         <div className={s.wrapper}>
             <NavBar/>
-            <ChatPad/>
+            <Outlet/>
         </div>
     );
 };
