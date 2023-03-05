@@ -9,10 +9,11 @@ import {StoreApi} from "zustand/esm";
 
 const NavBar = () => {
     const showBlack=useShowBlack(state=>state.showBlack)
+    const setShowBlack=useShowBlack(state=>state.setShowBlack)
     const [showDark,setShowDark]=useState(false)
     const updateShow=()=>{
         setShowDark(showDark=>!showDark)
-
+        setShowBlack()
     }
     useEffect(()=>{
         const body =document.getElementById("root")

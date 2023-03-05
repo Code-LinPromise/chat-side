@@ -6,12 +6,13 @@ import {useShowBlack} from "../../store/useShowBlack";
 type Props={
     name:IconType,
     ClickEvent?: (e: React.MouseEvent<SVGSVGElement>)=>void,
+    isBlack?:boolean
 }
-const Icon = (props:Props) => {
-    const showBlack=useShowBlack(state=>state.showBlack)
+const Icon = ({name,ClickEvent,isBlack=false}:Props) => {
+
     return (
-        <svg className={showBlack?s.svgBlack:s.svgWhite} onClick={(e)=>props?.ClickEvent?.(e)}>
-            <use xlinkHref={`#${props.name}`}></use>
+        <svg className={isBlack?s.svgBlack:s.svgWhite} onClick={(e)=>ClickEvent?.(e)}>
+            <use xlinkHref={`#${name}`}></use>
         </svg>
     );
 };

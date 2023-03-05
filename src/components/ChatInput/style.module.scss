@@ -6,23 +6,27 @@
   padding: 12px 20px;
   border-radius: 16px;
   border: 1px solid var(--input-border-color);
-  >input{
-    height: 24px;
-    width: 650px;
-    border: none;
-    font-size: 18px;
-    background-color: var(--input-bg-color);
-    color: var(--input-text-color);
-    &:focus{
-      outline: none;
+  >form{
+    >input{
+      height: 24px;
+      width: 650px;
+      border: none;
+      font-size: 18px;
+      background-color: var(--input-bg-color);
+      color: var(--input-text-color);
+      &:focus{
+        outline: none;
+      }
     }
-  }
-  >span{
-    &:hover{
-      background-color: var(--input--icon-send-color);
+    >button{
+      border: none;
+      background:  var(--input-bg-color);
+      &:hover{
+        background-color: var(--input--icon-send-color);
+      }
+      padding: 5px 8px;
+      cursor: pointer;
+      border-radius: 8px;
     }
-    padding: 5px 8px;
-    cursor: pointer;
-    border-radius: 8px;
   }
 }
