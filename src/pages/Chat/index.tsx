@@ -1,9 +1,8 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import  s from "./style.module.scss"
 import NavBar from "../../layouts/NavBar";
-import {useEffect} from "react";
-import ChatPad from "../ChatPad";
 import {Outlet} from "react-router-dom";
+import axios from "axios";
 
 const Chat = () => {
 
