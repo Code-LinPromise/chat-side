@@ -5,26 +5,29 @@ import NewChat from "../../components/NewChat";
 import ChatItemList from "../../components/ChatItemList";
 import ToolList from "../../components/ToolList";
 import {useShowBlack} from "../../store/useShowBlack";
+import {useShiftModel} from "../../store/useShiftModel";
 
 const NavBar = () => {
+    const shiftModel=useShiftModel(state=>state.shiftModel)
+    const setShift =useShiftModel(state=>state.setShift)
     const showBlack=useShowBlack(state=>state.showBlack)
     const setShowBlack=useShowBlack(state=>state.setShowBlack)
-    const [showDark,setShowDark]=useState(false)
+
     const updateShow=()=>{
-        setShowDark(showDark=>!showDark)
+        setShift()
         setShowBlack()
     }
     useEffect(()=>{
         const body =document.getElementById("root")
-        if(showDark && body){
-            body.className="dark all"
+        if(shiftModel && body){
+            body.className="dark"
         }
         else{
             if(body){
-                body.className="light all"
+                body.className="light"
             }
         }
-    },[showDark])
+    },[shiftModel])
     return (
         <div className={s.wrapper}>
             <NewChat />

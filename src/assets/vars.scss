@@ -10,8 +10,6 @@
   --user-bg-color:#ffffff;
   --ai-bg-color:#f7f7f8;
   --user-ai-text-color:#374151;
-}
-:root .all {
   --nav-bg-start-color:#202123;
   --nav-bg-end-color:#1f2022;
   --nav-border-color:#555659;
@@ -21,8 +19,14 @@
   --input-bg-color: #ffffff;
 }
 
-
 :root .dark{
+  --nav-bg-start-color:#202123;
+  --nav-bg-end-color:#1f2022;
+  --nav-border-color:#555659;
+  --nav-text-color:white;
+  --nav-hover-color:#2b2c2f;
+  --chat-item-text-color:white;
+
   --user-ai-text-color:#d1d5db;
   --ai-bg-color:#444654;
   --user-bg-color:#343541;

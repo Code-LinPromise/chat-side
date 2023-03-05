@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
 import s from "./style.module.scss"
-import {useShowBlack} from "../../store/useShowBlack";
 
 
 type Props={
